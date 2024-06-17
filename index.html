@@ -65,9 +65,10 @@
     <div class="text-center py-2">
       <button class="fw-bold fs-5 rounded-2 text-bg-light text-primary">
         <a title="printPage Me" class="text-decoration-none" href="card.html"> 
-        <!-- Date : Apr 30, 2024    -->
-        <div class="time"></div>
-        <div class="date"></div>
+         Date : Jun 17, 2024   
+         <!-- <div class="time"></div>
+        <div class="date"></div>-->
+       
     
         <!-- print function-->
         <span class="">
@@ -109,7 +110,7 @@
         <button
           type="button"
           class="btn btn-secondary fs- fw-bold text-uppercase text-info" >
-          Auto shop Closed from May 27, 2024
+          Auto shop Closed from May 27, 2024, everything shutdown June 17,2024 | 7:30 am
           <!-- <h2 class=" text-bg-danger">Not Finish</h2> -->
         </button>
       </div>
@@ -183,7 +184,10 @@ function formatDate(date) {
 
   return ` ${
     MONTHS[date.getMonth()]
-  } ${date.getDate()-1}, ${date.getFullYear()}`;
+    /**
+ * } ${date.getDate()-1}, ${date.getFullYear()}`;
+ */
+  } ${date.getDate()}, ${date.getFullYear()}`;
 }
 
 setInterval(() => {
